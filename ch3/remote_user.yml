@@ -1,0 +1,10 @@
+---
+- name: Demo play (demo remote_user inside play)
+  hosts: all
+  remote_user: devops
+  become: true
+
+  tasks:
+    - name: Just do something
+      shell: whoami
+

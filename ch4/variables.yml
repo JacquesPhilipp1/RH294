@@ -1,0 +1,26 @@
+---
+# Vars in play
+- name: Demo play (define vars in play)
+  hosts: localhost
+  vars:
+    username: bob
+    first_name: bob
+    surname: builder
+
+  tasks:
+  - name: Echo {{ username }}
+    debug:
+      msg: "{{ username }}"
+
+
+# Vars in files
+- name: Demo play (define vars in files)
+  hosts: localhost
+  var_files:
+    - vars/users.yml
+
+  tasks:
+  - name: Echo {{ username }}
+    debug:
+      msg: "{{ username }}"
+

@@ -1,0 +1,26 @@
+---
+- name: Demo play (working with multi-line strings)
+  hosts: localhost
+  tasks:
+
+  - name: Pipe char denotes new lines
+    copy:
+      content: |
+        this is 
+        a
+        new
+        line on
+        each
+      dest: /tmp/string1
+
+  - name: wrap text
+    copy:
+      content: >
+        This
+        is
+        one
+        line
+        of
+        text
+      dest: /tmp/string2
+

@@ -1,0 +1,26 @@
+[web]
+servera.lab.example.com user=joe
+serverc.lab.exmaple.com
+
+[web:vars]
+user=joe
+
+[db]
+serverb.lab.example.com
+
+[jhb]
+servera.lab.example.com
+serverb.lab.example.com
+
+[ct]
+serverc.lab.exmaple.com
+serverd.lab.exmaple.com
+
+[africa:children]
+jhb
+ct
+
+192.168.1[10:100]
+
+www[01:20].example.com
+

@@ -1,0 +1,17 @@
+---
+- name: Demo play (Multi-play 1)
+  hosts: servera
+  tasks:
+    - name: Copy content to servera.
+      copy:
+        content: "This is servera"
+        dest: /tmp/multi_play
+
+- name: Demo play (Multi-play 2)
+  hosts: serverb
+  tasks:
+    - name: Copy content to serverb
+      copy:
+        content: "This is serverb"
+        dest: /tmp/multi_play
+

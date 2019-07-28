@@ -1,0 +1,22 @@
+---
+- name: Demo play (Multi-task)
+  hosts: servera
+  tasks:
+    - name: Install latest software
+      yum:
+        name:
+          - httpd
+          - firewalld
+        state: latest
+
+    - name: Copy content into /var/www/html/index.html
+      copy:
+        content: "Hello World!"
+        dest: /var/www/html/index.html
+
+    - name: start httpd
+      service:
+        name: httpd
+        state: started
+        enabled: true
+

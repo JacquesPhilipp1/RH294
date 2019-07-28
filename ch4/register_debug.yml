@@ -1,0 +1,11 @@
+---
+- name: Demo play (Register and Debug vars)
+  hosts: localhost
+  tasks:
+
+  - name: Let register a var from the shell module
+    shell: whoami
+    register: shell_results
+
+  - debug: var=shell_results
+

@@ -1,0 +1,11 @@
+---
+# Compare this to the ad-hoc command
+# Explain key-value pairs, indentation, and lists.
+- name: 1. Demo play - Add a user
+  hosts: servera
+
+  tasks:
+  - name: Add the user bob
+    user:
+      name: bob
+      state: present

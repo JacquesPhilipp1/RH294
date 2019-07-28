@@ -1,0 +1,45 @@
+1. Inventory
+	ungrouped
+	grouped
+	:children
+	ranges server[a:d].lab.example.com
+	ansible all --list-hosts
+	ansible jhb --list-hosts
+
+2. ansible.cfg
+	[defaults]
+	inventory = ./inventory
+	remote_user = root
+	ask_pass = false
+
+	[privilege_escalation]
+	become = true
+	become_method = sudo
+	become_user = root
+	become_ask_pass = false
+
+3. ad-hoc commands
+	# Ping (One of the most basic ad-hoc commands)
+	ansible all -m ping
+
+	# Add a user to demo using a module.
+	ansible -m user -a 'name=bob state=present' servera
+
+	# Show idempotent by running same command.
+	ansible -m user -a 'name=bob state=present' servera
+
+	# Running Arbitrary Commands using command module (no shell processing)
+	ansible web -m command -a 'uptime'
+
+	# If I wanted to get output on a single line from previos command
+	ansible web -m command -a 'uptime' -o
+
+	# Running Arbitrary Commands using shell module (supports shell processing | <>)
+	ansible servera -m shell -a 'cat /etc/passwd | grep bob'
+	ansible servera -m command -a 'cat /etc/passwd | grep bob'
+	
+	# Must use shell module for built in bash commands like set
+	ansible servera -m shell -a 'set'
+	ansible servera -m command -a 'set'
+
+
