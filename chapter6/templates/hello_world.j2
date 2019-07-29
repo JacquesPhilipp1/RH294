@@ -1,0 +1,13 @@
+{# This is a comment. This will not appear in the final file #}
+{# It's good practive to use the ansible_managed directive that can be set in ansible.cfg #}
+Hello World!
+
+This is our first template.
+Created on: {{ ansible_facts.date_time.date }}
+Hostname: {{ ansible_facts.hostname }}
+
+We can also use other variables from in the play.
+
+My name is {{ myname }}
+
+

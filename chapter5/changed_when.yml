@@ -1,0 +1,9 @@
+---
+- name: Demo play (changed when)
+  hosts: localhost
+  tasks:
+
+  - name: The shell module always reports changes state
+    shell: echo Hello
+    register: command_result
+    changed_when: "'Bye' in command_result.stdout"

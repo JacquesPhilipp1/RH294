@@ -1,0 +1,24 @@
+---
+- name: Demo play (simple loop)
+  hosts: localhost
+  tasks:
+
+### This can be rewritten as a loop
+  - name: Start httpd
+    service:
+      name: httpd
+      state: started
+
+  - name: Start firewalld
+    service:
+      name: firewalld
+      state: started
+
+#### The above could rather have been written as a loop below
+  - name: Start all services
+    service:
+      name: "{{ item }}"
+      state: started
+    loop:
+      - httpd
+      - firewalld

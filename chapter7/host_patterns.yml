@@ -1,0 +1,42 @@
+---
+- name: This is to demo host patterns
+
+### Host pattern from inventory
+  hosts: servera
+
+### group pattern from inventory
+  hosts: web
+
+### special group for all hosts in inv
+  hosts: all
+
+### hosts not in a group in inv
+  hosts: ungrouped
+
+### Wildcards are supported. So this is the same as all. Always use single quotes
+  hosts: '*'
+  hosts: '*.example.com'
+  hosts: '192.168.1.*'
+
+### Wildcards with host groups
+  hosts: 'datacenter*'
+
+
+### Comma seperated lists are supported
+  hosts: servera.example.com,serverb.example.com
+
+### You can mix groups and hosts in a list
+  hosts: web,servera.example.com
+
+### lists support wildcards too
+  hosts: web,servera.example.com,192.168.1.*
+
+
+### & is a logical AND which means they must be in both groups
+  hosts: web,&datacenter1
+
+### Exclude hosts or groups with a !
+  hosts: '!web,datacenter1'
+
+
+

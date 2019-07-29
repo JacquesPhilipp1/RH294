@@ -1,0 +1,12 @@
+servera.example.com
+
+[web]
+serverb.example.com
+serverc
+
+[datacenter1]
+serverb.example.com location=jhb
+
+[datacenter2]
+serverd
+serverc

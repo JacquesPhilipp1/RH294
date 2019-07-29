@@ -1,0 +1,9 @@
+serverc
+serverd
+
+[web]
+servera package=httpd
+serverb package=apache2
+
+[web:vars]
+user=httpd

@@ -1,0 +1,19 @@
+---
+- name: Demo play (simple bool condition)
+  hosts: localhost
+  vars:
+    - is_this_set: true
+    #- package: httpd
+  tasks:
+
+  - name: This will only run if the var is_this_set is true
+    shell: "echo Hello"
+    when: is_this_set
+
+  
+
+  - name: This will only run if the var package is defined
+    yum:
+      name: "{{ package }}"
+      state: present
+    when: package is defined

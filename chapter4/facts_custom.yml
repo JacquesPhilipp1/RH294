@@ -1,0 +1,11 @@
+---
+- name: Demo play (custom facts)
+  hosts: localhost
+  tasks:
+
+  - name: print custom facts
+    debug:
+      msg: >
+        The following are custom facts
+        {{ ansible_facts.ansible_local.custom.names.first }}
+        {{ ansible_facts.ansible_local.custom.names.last }}

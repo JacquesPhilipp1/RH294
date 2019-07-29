@@ -1,0 +1,6 @@
+---
+- name: Import tasks from task file
+  hosts: localhost
+  tasks:
+
+  - import_tasks: tasks.yml

@@ -1,0 +1,11 @@
+---
+- name: Demo play (only restart httpd if firewalld is running)
+  hosts: localhost
+  tasks:
+
+  - name: install mariadb-server if enough space on root
+    yum:
+      name: mariadb-server
+      state: latest
+    loop: "{{ ansible_mounts }}"
+    when: item.mount == "/" and item.size_available > 300000000

@@ -1,0 +1,22 @@
+---
+
+### This is just to demo when conditionals
+
+# Either eith or has to be true
+when: ansible_distribution == "RedHat" or ansible_distribution == "Fedora"
+
+# Both have to be true with AND
+when: ansible_distribution_version == "7.5" and ansible_kernel == "3.10.0-327.el7.x86_64"
+
+# Lists are supported but assumes AND
+when:
+  - something == "1"
+  - something_else == "2"
+
+# You can group conditionals with ()
+when:
+  ( something == "1" and something_else == "2" )
+  or
+  ( something == "1" and something_else == "5" )
+
+

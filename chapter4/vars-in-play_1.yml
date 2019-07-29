@@ -1,0 +1,18 @@
+---
+- name: Demo play (Define vars in play)
+  hosts: web
+  vars:
+    software: httpd
+    index: /var/www/html/index.html
+
+  tasks:
+  - name: Install software {{ software }}
+    yum:
+      name: "{{ software }}"
+      state: latest
+
+  - name: Copy content to {{ index }}
+    copy:
+      content: "Hello World!"
+      dest: "{{ index }}"
+

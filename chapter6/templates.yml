@@ -1,0 +1,53 @@
+---
+- name: Demo play (templats)
+  hosts: localhost
+  vars:
+    myname: Jacques
+    names:
+      - Jim
+      - Bob
+      - Sarah
+    others:
+      - Kate
+      - Al
+  tasks:
+
+### Render a template that uses facts and vars
+#
+  - name: Render a template using the template module
+    template:
+      src: templates/hello_world.j2
+      dest: /tmp/MyFirstTemplate.txt
+      owner: jacques
+      group: jacques
+      mode: 0640
+    tags:
+      - hello
+
+### Render a template that has loops
+#
+  - name: The template templates/loops.j2 contains for loops
+    template:
+      src: templates/loops.j2
+      dest: /tmp/loops.txt
+    tags:
+      - loops
+
+### Render a template that contains conditionals
+#
+  - name: Conditionals
+    template:
+      src: templates/conditionals.j2
+      dest: /tmp/conditionals.txt
+    tags:
+      - conditional
+
+### Render a template that contains filter
+#
+  - name: Filter
+    template:
+      src: templates/filter.j2
+      dest: /tmp/filter.txt
+    tags:
+      - filter
+

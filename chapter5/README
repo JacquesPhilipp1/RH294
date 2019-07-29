@@ -1,0 +1,60 @@
+1. Loops
+  # Iterating using loop
+    - loops_1.yml
+
+  # List of Hashes or Dictionaries
+    - loops_dictionary_2.yml
+
+  # Old ansible used different syntax with_ (page 156)
+    - with_items
+    - with_files
+    - with_sequence
+
+  # old syntax can be converted to use loop in conjunction with Ansible filters
+
+  # register keyword can also capture the output of a task that loops
+    - loop_register_3.yml
+
+2. Conditionals
+  # when certain conditions are met
+    - condition_1.yml
+
+  # Example Conditionals (page 160)
+    - condition_multi_2.yml
+
+  # combine loops and conditionals
+    - condition_and_loop_4.yml
+
+### GUIDED EXEC ###
+
+
+3. Handlers
+  # Handlers respond to notifications from other tasks.
+    - handlers.yml
+
+  # Benifits
+    - (Page 169)
+
+### GUIDED EXEC ###
+
+
+4. Task Failure
+  # Skipping over errors
+    - ignore_errors.yml
+
+  # Force handlers to run if play fails
+    - force_handlers.yml
+
+  # Task failure conditions with failed_when
+    - fail_when.yml
+
+  # Change the reported changed state with changed_when
+    - changed_when.yml
+
+  # Block and error. when conditional applies to block
+    - blocks.yml
+
+  # Blocks also allow for error handling in combination with the rescue and always
+    - block_rescue_always.yml
+
+

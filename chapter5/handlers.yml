@@ -1,0 +1,17 @@
+---
+- name: Demo play (handlers)
+  hosts: localhost
+  tasks:
+
+  - name: Update httpd configuration
+    lineinfile:
+      line: "# some setting"
+      path: /etc/httpd/conf.d/welcome.conf
+    notify:
+      - restart httpd
+
+  handlers:
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted

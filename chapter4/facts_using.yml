@@ -1,0 +1,10 @@
+---
+- name: Demo play (show how to use facts in a play)
+  hosts: localhost
+  tasks:
+
+  - name: Print some facts
+    debug:
+      msg: >
+        The ip of {{ ansible_facts.fqdn }}
+        is {{ ansible_facts.default_ipv4.address }}

@@ -1,0 +1,13 @@
+---
+- name: Demo play (ignoring errors in a task)
+  hosts: localhost
+  tasks:
+
+  - name: If this fails, ignore the error and continue with the rest of the play
+    yum:
+      name: bulldust
+      state: present
+    ignore_errors: yes
+
+  - name: This will run because the above task ignores errors
+    shell: "echo YEAH"

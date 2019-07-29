@@ -1,0 +1,17 @@
+---
+- name: Demo play (Include vars from files)
+  hosts: web
+  vars_files:
+    - vars/webserver.yml
+
+  tasks:
+  - name: Install {{ software }}
+    yum:
+      name: "{{ software }}"
+      state: latest
+
+  - name: Copy content to {{ index }}
+    copy:
+      content: "Hello World!"
+      dest: "{{ index }}
+

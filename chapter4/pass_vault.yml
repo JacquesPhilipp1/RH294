@@ -1,0 +1,9 @@
+---
+- name: Demo play (prompt for pass)
+  hosts: serverc
+  tasks:
+
+  - name: Get the password
+    copy:
+      content: "{{ password }}"
+      dest: /tmp/pass

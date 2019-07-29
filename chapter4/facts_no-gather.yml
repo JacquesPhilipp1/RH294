@@ -1,0 +1,9 @@
+---
+- name: Demo Play (no facts)
+  hosts: localhost
+  #gather_facts: no
+  tasks:
+
+  - name: No facts
+    debug:
+      var: ansible_facts

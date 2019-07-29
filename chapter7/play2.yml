@@ -1,0 +1,8 @@
+---
+- name: demo play 2
+  hosts: localhost
+  tasks:
+
+  - name: Say something
+    debug:
+      msg: Play 2

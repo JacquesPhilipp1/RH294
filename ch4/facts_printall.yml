@@ -1,0 +1,8 @@
+---
+- name: Demo play (show all facts)
+  hosts: localhost
+  tasks:
+
+  - name: Print all facts
+    debug:
+      var: ansible_facts

@@ -1,0 +1,17 @@
+---
+- name: Demo play (fail when)
+  hosts: localhost
+  tasks:
+
+  - name: Run a shell script and deturmine if it should fail by its output 
+    shell: "echo Pass"
+    register: command_result
+    failed_when: "'Fail' in command_result.stdout"
+
+
+### You can also use the fail module
+
+  - name: Demo the fail module
+    fail:
+      msg: "The output was set to Fail. Try setting it to Pass"
+    when: "'Fail' in command_result.stdout"

@@ -1,0 +1,14 @@
+---
+- name: Import play 1
+  import_playbook: play1.yml
+
+- name: Import play 2
+  import_playbook: play2.yml
+
+- name: You can also interleave plays when importing
+  hosts: localhost
+  tasks:
+  
+  - name: Say something else
+    debug:
+      msg: Play 3

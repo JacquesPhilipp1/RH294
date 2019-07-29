@@ -1,0 +1,17 @@
+---
+- name: Demo play (blocks)
+  hosts: localhost
+  tasks:
+
+  - block:
+    - name: task 1 in block
+      yum:
+        name: httpd
+        state: present
+    
+    - name: task 2 in block
+      copy:
+        content: "Hello"
+        dest: /tmp/blocks.txt
+
+    when:  ansible_distribution == "RedHat"

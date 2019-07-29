@@ -1,0 +1,23 @@
+---
+- name: Demo play (force handlers after failure)
+  hosts: localhost
+  force_handlers: yes
+
+  tasks:
+  - name: This will always notify it's handler
+    command: /bin/true
+    notify: restart httpd
+
+  - name: This will fail
+    yum:
+      name: bulldust
+      state: present
+  
+  handlers:
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted
+
+      
+

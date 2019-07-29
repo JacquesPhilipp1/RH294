@@ -1,0 +1,17 @@
+---
+- name: Demo play (two hosts at a time using serial)
+  hosts: all
+  serial: 2
+  tasks:
+
+  - name: Update httpd
+    yum:
+      name: httpd
+      state: latest
+    notify: restart httpd
+
+  handlers:
+  - name: restart httpd
+    service:
+      name: httpd
+      state: restarted

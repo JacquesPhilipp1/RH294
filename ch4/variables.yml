@@ -1,7 +1,7 @@
 ---
 # Vars in play
 - name: Demo play (define vars in play)
-  hosts: localhost
+  hosts: servera
   vars:
     username: bob
     first_name: bob
@@ -15,7 +15,7 @@
 
 # Vars in files
 - name: Demo play (define vars in files)
-  hosts: localhost
+  hosts: servera
   var_files:
     - vars/users.yml
 

@@ -1,0 +1,2 @@
+software: httpd
+index: /var/www/html/index.html

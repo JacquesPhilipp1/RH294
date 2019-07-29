@@ -1,0 +1,15 @@
+---
+- name: Demo play (loop using hash/dictionary)
+  hosts: localhost
+  tasks:
+
+  - name: Add the following user and groups
+    user:
+      name: "{{ item.name }}"
+      group: "{{ item.group }}"
+      state: present
+    loop:
+      - name: bob
+        group: wheel
+      - name: sarah
+        group: wheel

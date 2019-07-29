@@ -1,0 +1,25 @@
+---
+- name: Demo play (arrays vs vars)
+  hosts: web
+  vars:
+### Instead of defining different vars for each you can use an array
+    user1_firstname: Jacques
+    user1_surname: Philipp
+    user1_username: jacques
+    user2_firstname: Bob
+    user2_surname: TheBuilder
+    user2_username: bob
+### Rather use and array
+    users:
+      bob:
+        firstname: Bob
+        surname: TheBuilder
+      jacques:
+        firstname: Jacques
+        surname: Philipp
+
+  tasks:
+  - name: Show how to call arrays
+      copy:
+        content: "{{ users['bob']['firstname'] }}"
+        dest: /tmp/bob
