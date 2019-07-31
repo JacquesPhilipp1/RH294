@@ -1,0 +1,7 @@
+---
+- name: demo
+  hosts: localhost
+  tasks:
+
+  - name: script demo
+    script: script.sh

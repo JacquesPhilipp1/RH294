@@ -2,6 +2,9 @@
   # Iterating using loop
     - loops_1.yml
 
+  # You can use a var under loops too
+    - loops_2.yml
+
   # List of Hashes or Dictionaries
     - loops_dictionary_2.yml
 

@@ -1,0 +1,1369 @@
+2019-07-11 21:17:28,824 p=25137 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:17:28,839 p=25137 u=jacques |  TASK [Create a directory] ************************************************************************************************************************************
+2019-07-11 21:17:29,697 p=25137 u=jacques |  ok: [localhost]
+2019-07-11 21:17:29,704 p=25137 u=jacques |  TASK [Touch a file bar.txt] **********************************************************************************************************************************
+2019-07-11 21:17:30,067 p=25137 u=jacques |  changed: [localhost]
+2019-07-11 21:17:30,073 p=25137 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:17:30,429 p=25137 u=jacques |  ok: [localhost]
+2019-07-11 21:17:30,435 p=25137 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:17:33,971 p=25137 u=jacques |  ok: [localhost]
+2019-07-11 21:17:33,983 p=25137 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:17:35,902 p=25137 u=jacques |  changed: [localhost]
+2019-07-11 21:17:35,917 p=25137 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:17:36,567 p=25137 u=jacques |  changed: [localhost]
+2019-07-11 21:17:36,574 p=25137 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:17:37,370 p=25137 u=jacques |  ok: [localhost]
+2019-07-11 21:17:37,377 p=25137 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:17:38,028 p=25137 u=jacques |  ok: [localhost]
+2019-07-11 21:17:38,037 p=25137 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:17:38,445 p=25137 u=jacques |  changed: [localhost]
+2019-07-11 21:17:38,452 p=25137 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:17:39,000 p=25137 u=jacques |  ok: [localhost]
+2019-07-11 21:17:39,007 p=25137 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:17:39,051 p=25137 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562872657.989334,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562872650.029328,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562872650.029328,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:17:39,058 p=25137 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:17:39,837 p=25137 u=jacques |  changed: [localhost]
+2019-07-11 21:17:39,841 p=25137 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:17:39,841 p=25137 u=jacques |  localhost                  : ok=12   changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:20:55,776 p=3386 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:21:10,456 p=3386 u=jacques |  Perform task: TASK: Create a directory (N)o/(y)es/(c)ontinue: ************************************************************************************************
+2019-07-11 21:21:10,472 p=3386 u=jacques |  TASK [Create a directory] ************************************************************************************************************************************
+2019-07-11 21:21:11,215 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:24,009 p=3386 u=jacques |  Perform task: TASK: Touch a file bar.txt (N)o/(y)es/(c)ontinue: **********************************************************************************************
+2019-07-11 21:21:24,014 p=3386 u=jacques |  TASK [Touch a file bar.txt] **********************************************************************************************************************************
+2019-07-11 21:21:24,397 p=3386 u=jacques |  changed: [localhost]
+2019-07-11 21:21:27,681 p=3386 u=jacques |  Perform task: TASK: Set SELinux type (N)o/(y)es/(c)ontinue: **************************************************************************************************
+2019-07-11 21:21:27,690 p=3386 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:21:28,120 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:30,646 p=3386 u=jacques |  Perform task: TASK: Set SELinux type persistently (N)o/(y)es/(c)ontinue: *************************************************************************************
+2019-07-11 21:21:30,654 p=3386 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:21:32,578 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:32,583 p=3386 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:21:34,088 p=3386 u=jacques |  changed: [localhost]
+2019-07-11 21:21:34,101 p=3386 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:21:34,847 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:34,852 p=3386 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:21:35,582 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:35,587 p=3386 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:21:36,337 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:36,349 p=3386 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:21:36,904 p=3386 u=jacques |  changed: [localhost]
+2019-07-11 21:21:36,910 p=3386 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:21:37,489 p=3386 u=jacques |  ok: [localhost]
+2019-07-11 21:21:37,504 p=3386 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:21:37,551 p=3386 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562872896.2775147,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562872884.3515058,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562872884.3515058,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:21:37,565 p=3386 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:21:38,385 p=3386 u=jacques |  changed: [localhost]
+2019-07-11 21:21:38,388 p=3386 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:21:38,388 p=3386 u=jacques |  localhost                  : ok=12   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:21:46,020 p=9523 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:21:48,578 p=9523 u=jacques |  Perform task: TASK: Create a directory (N)o/(y)es/(c)ontinue: ************************************************************************************************
+2019-07-11 21:21:49,674 p=9523 u=jacques |  Perform task: TASK: Touch a file bar.txt (N)o/(y)es/(c)ontinue: **********************************************************************************************
+2019-07-11 21:21:50,961 p=9523 u=jacques |  Perform task: TASK: Set SELinux type (N)o/(y)es/(c)ontinue: **************************************************************************************************
+2019-07-11 21:21:50,970 p=9523 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:21:51,653 p=9523 u=jacques |  ok: [localhost]
+2019-07-11 21:21:53,469 p=9523 u=jacques |  Perform task: TASK: Set SELinux type persistently (N)o/(y)es/(c)ontinue: *************************************************************************************
+2019-07-11 21:21:53,476 p=9523 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:21:55,774 p=9523 u=jacques |  ok: [localhost]
+2019-07-11 21:21:55,790 p=9523 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:21:57,458 p=9523 u=jacques |  changed: [localhost]
+2019-07-11 21:21:57,471 p=9523 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:21:58,276 p=9523 u=jacques |  ok: [localhost]
+2019-07-11 21:21:58,283 p=9523 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:21:59,077 p=9523 u=jacques |  ok: [localhost]
+2019-07-11 21:21:59,094 p=9523 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:22:00,008 p=9523 u=jacques |  ok: [localhost]
+2019-07-11 21:22:00,022 p=9523 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:22:00,569 p=9523 u=jacques |  changed: [localhost]
+2019-07-11 21:22:00,583 p=9523 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:22:01,111 p=9523 u=jacques |  ok: [localhost]
+2019-07-11 21:22:01,125 p=9523 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:22:01,173 p=9523 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562872919.9455328,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562872884.3515058,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562872884.3515058,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:22:01,184 p=9523 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:22:02,081 p=9523 u=jacques |  changed: [localhost]
+2019-07-11 21:22:02,087 p=9523 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:22:02,088 p=9523 u=jacques |  localhost                  : ok=10   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:22:53,197 p=22772 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:22:53,214 p=22772 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:22:54,510 p=22772 u=jacques |  changed: [localhost]
+2019-07-11 21:22:54,520 p=22772 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:22:55,181 p=22772 u=jacques |  ok: [localhost]
+2019-07-11 21:22:55,195 p=22772 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:22:55,935 p=22772 u=jacques |  ok: [localhost]
+2019-07-11 21:22:55,942 p=22772 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:22:56,750 p=22772 u=jacques |  ok: [localhost]
+2019-07-11 21:22:56,756 p=22772 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:22:57,524 p=22772 u=jacques |  changed: [localhost]
+2019-07-11 21:22:57,530 p=22772 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:22:58,025 p=22772 u=jacques |  ok: [localhost]
+2019-07-11 21:22:58,032 p=22772 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:22:58,060 p=22772 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562872976.7015758,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562872884.3515058,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562872884.3515058,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:22:58,071 p=22772 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:22:58,842 p=22772 u=jacques |  changed: [localhost]
+2019-07-11 21:22:58,847 p=22772 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:22:58,847 p=22772 u=jacques |  localhost                  : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:23:53,503 p=30212 u=jacques |  Using /home/jacques/Class/DO407/chapter9/ansible.cfg as config file
+2019-07-11 21:23:54,227 p=30212 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:23:54,247 p=30212 u=jacques |  TASK [Create a directory] ************************************************************************************************************************************
+2019-07-11 21:23:54,996 p=30212 u=jacques |  ok: [localhost] => {"changed": false, "gid": 1000, "group": "jacques", "mode": "0755", "owner": "jacques", "path": "/tmp/foo", "secontext": "unconfined_u:object_r:user_tmp_t:s0", "size": 60, "state": "directory", "uid": 1000}
+2019-07-11 21:23:55,002 p=30212 u=jacques |  TASK [Touch a file bar.txt] **********************************************************************************************************************************
+2019-07-11 21:23:55,524 p=30212 u=jacques |  changed: [localhost] => {"changed": true, "dest": "/tmp/foo/bar.txt", "gid": 1000, "group": "jacques", "mode": "0640", "owner": "jacques", "secontext": "unconfined_u:object_r:samba_share_t:s0", "size": 131, "state": "file", "uid": 1000}
+2019-07-11 21:23:55,530 p=30212 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:23:56,022 p=30212 u=jacques |  ok: [localhost] => {"changed": false, "gid": 1000, "group": "jacques", "mode": "0640", "owner": "jacques", "path": "/tmp/foo/bar.txt", "secontext": "unconfined_u:object_r:samba_share_t:s0", "size": 131, "state": "file", "uid": 1000}
+2019-07-11 21:23:56,030 p=30212 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:23:58,057 p=30212 u=jacques |  ok: [localhost] => {"changed": false, "ftype": "a", "serange": "s0", "setype": "samba_share_t", "seuser": "system_u", "state": "present", "target": "/tmp/foo/bar.txt"}
+2019-07-11 21:23:58,067 p=30212 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:23:59,788 p=30212 u=jacques |  changed: [localhost] => {"changed": true, "checksum": "6e79a0e0edc5674e439de15c4cb098de57db0384", "dest": "/tmp/foo/passwd", "gid": 0, "group": "root", "md5sum": "78bbbe0c25c6fe5f6975074efac70020", "mode": "0644", "owner": "root", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 3119, "src": "/home/jacques/.ansible/tmp/ansible-tmp-1562873038.1320503-89459089066471/source", "state": "file", "uid": 0}
+2019-07-11 21:23:59,799 p=30212 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:24:00,632 p=30212 u=jacques |  ok: [localhost] => {"changed": false, "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b", "dest": "/home/jacques/Class/DO407/chapter9/bar.txt", "file": "/tmp/foo/bar.txt", "md5sum": "07c12c42e26bb5bdb7604167b9feb278"}
+2019-07-11 21:24:00,642 p=30212 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:24:01,600 p=30212 u=jacques |  ok: [localhost] => {"backup": "", "changed": false, "msg": ""}
+2019-07-11 21:24:01,614 p=30212 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:24:02,401 p=30212 u=jacques |  ok: [localhost] => {"changed": false, "msg": ""}
+2019-07-11 21:24:02,408 p=30212 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:24:02,860 p=30212 u=jacques |  changed: [localhost] => {"changed": true, "path": "/tmp/foo/passwd", "state": "absent"}
+2019-07-11 21:24:02,869 p=30212 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:24:03,395 p=30212 u=jacques |  ok: [localhost] => {"changed": false, "stat": {"atime": 1562873042.3526256, "attr_flags": "", "attributes": [], "block_size": 4096, "blocks": 8, "charset": "us-ascii", "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b", "ctime": 1562873035.4656203, "dev": 45, "device_type": 0, "executable": false, "exists": true, "gid": 1000, "gr_name": "jacques", "inode": 411897, "isblk": false, "ischr": false, "isdir": false, "isfifo": false, "isgid": false, "islnk": false, "isreg": true, "issock": false, "isuid": false, "mimetype": "text/plain", "mode": "0640", "mtime": 1562873035.4656203, "nlink": 1, "path": "/tmp/foo/bar.txt", "pw_name": "jacques", "readable": true, "rgrp": true, "roth": false, "rusr": true, "size": 131, "uid": 1000, "version": null, "wgrp": false, "woth": false, "writeable": true, "wusr": true, "xgrp": false, "xoth": false, "xusr": false}}
+2019-07-11 21:24:03,402 p=30212 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:24:03,442 p=30212 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562873042.3526256,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562873035.4656203,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562873035.4656203,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:24:03,449 p=30212 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:24:04,285 p=30212 u=jacques |  changed: [localhost] => {"changed": true, "cmd": "/usr/bin/rsync --delay-updates -F --compress --archive --out-format=<<CHANGED>>%i %n%L /tmp/foo /tmp/remote_foo", "msg": ".d..t...... foo/\n>f..t...... foo/bar.txt\n", "rc": 0, "stdout_lines": [".d..t...... foo/", ">f..t...... foo/bar.txt"]}
+2019-07-11 21:24:04,289 p=30212 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:24:04,290 p=30212 u=jacques |  localhost                  : ok=12   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:24:14,598 p=4448 u=jacques |  ansible-playbook 2.8.1
+  config file = /home/jacques/Class/DO407/chapter9/ansible.cfg
+  configured module search path = ['/home/jacques/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.7.3 (default, May 11 2019, 00:45:16) [GCC 8.3.1 20190223 (Red Hat 8.3.1-2)]
+2019-07-11 21:24:14,598 p=4448 u=jacques |  Using /home/jacques/Class/DO407/chapter9/ansible.cfg as config file
+2019-07-11 21:24:15,625 p=4448 u=jacques |  PLAYBOOK: step.yml *******************************************************************************************************************************************
+2019-07-11 21:24:15,626 p=4448 u=jacques |  1 plays in step.yml
+2019-07-11 21:24:15,669 p=4448 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:24:15,679 p=4448 u=jacques |  META: ran handlers
+2019-07-11 21:24:15,695 p=4448 u=jacques |  TASK [Create a directory] ************************************************************************************************************************************
+2019-07-11 21:24:15,695 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:10
+2019-07-11 21:24:16,637 p=4448 u=jacques |  ok: [localhost] => {"changed": false, "gid": 1000, "group": "jacques", "mode": "0755", "owner": "jacques", "path": "/tmp/foo", "secontext": "unconfined_u:object_r:user_tmp_t:s0", "size": 60, "state": "directory", "uid": 1000}
+2019-07-11 21:24:16,652 p=4448 u=jacques |  TASK [Touch a file bar.txt] **********************************************************************************************************************************
+2019-07-11 21:24:16,653 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:23
+2019-07-11 21:24:17,225 p=4448 u=jacques |  changed: [localhost] => {"changed": true, "dest": "/tmp/foo/bar.txt", "gid": 1000, "group": "jacques", "mode": "0640", "owner": "jacques", "secontext": "unconfined_u:object_r:samba_share_t:s0", "size": 131, "state": "file", "uid": 1000}
+2019-07-11 21:24:17,235 p=4448 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:24:17,236 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:36
+2019-07-11 21:24:17,722 p=4448 u=jacques |  ok: [localhost] => {"changed": false, "gid": 1000, "group": "jacques", "mode": "0640", "owner": "jacques", "path": "/tmp/foo/bar.txt", "secontext": "unconfined_u:object_r:samba_share_t:s0", "size": 131, "state": "file", "uid": 1000}
+2019-07-11 21:24:17,729 p=4448 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:24:17,729 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:46
+2019-07-11 21:24:19,675 p=4448 u=jacques |  ok: [localhost] => {"changed": false, "ftype": "a", "serange": "s0", "setype": "samba_share_t", "seuser": "system_u", "state": "present", "target": "/tmp/foo/bar.txt"}
+2019-07-11 21:24:19,686 p=4448 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:24:19,686 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:57
+2019-07-11 21:24:21,168 p=4448 u=jacques |  changed: [localhost] => {"changed": true, "checksum": "6e79a0e0edc5674e439de15c4cb098de57db0384", "dest": "/tmp/foo/passwd", "gid": 0, "group": "root", "md5sum": "78bbbe0c25c6fe5f6975074efac70020", "mode": "0644", "owner": "root", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 3119, "src": "/home/jacques/.ansible/tmp/ansible-tmp-1562873059.7067113-243491607671419/source", "state": "file", "uid": 0}
+2019-07-11 21:24:21,190 p=4448 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:24:21,190 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:67
+2019-07-11 21:24:22,027 p=4448 u=jacques |  ok: [localhost] => {"changed": false, "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b", "dest": "/home/jacques/Class/DO407/chapter9/bar.txt", "file": "/tmp/foo/bar.txt", "md5sum": "07c12c42e26bb5bdb7604167b9feb278"}
+2019-07-11 21:24:22,033 p=4448 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:24:22,033 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:78
+2019-07-11 21:24:22,949 p=4448 u=jacques |  ok: [localhost] => {"backup": "", "changed": false, "msg": ""}
+2019-07-11 21:24:22,960 p=4448 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:24:22,961 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:89
+2019-07-11 21:24:23,810 p=4448 u=jacques |  ok: [localhost] => {"changed": false, "msg": ""}
+2019-07-11 21:24:23,822 p=4448 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:24:23,822 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:103
+2019-07-11 21:24:24,330 p=4448 u=jacques |  changed: [localhost] => {"changed": true, "path": "/tmp/foo/passwd", "state": "absent"}
+2019-07-11 21:24:24,348 p=4448 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:24:24,349 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:113
+2019-07-11 21:24:24,824 p=4448 u=jacques |  ok: [localhost] => {"changed": false, "stat": {"atime": 1562873063.7546418, "attr_flags": "", "attributes": [], "block_size": 4096, "blocks": 8, "charset": "us-ascii", "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b", "ctime": 1562873057.1656368, "dev": 45, "device_type": 0, "executable": false, "exists": true, "gid": 1000, "gr_name": "jacques", "inode": 411897, "isblk": false, "ischr": false, "isdir": false, "isfifo": false, "isgid": false, "islnk": false, "isreg": true, "issock": false, "isuid": false, "mimetype": "text/plain", "mode": "0640", "mtime": 1562873057.1656368, "nlink": 1, "path": "/tmp/foo/bar.txt", "pw_name": "jacques", "readable": true, "rgrp": true, "roth": false, "rusr": true, "size": 131, "uid": 1000, "version": null, "wgrp": false, "woth": false, "writeable": true, "wusr": true, "xgrp": false, "xoth": false, "xusr": false}}
+2019-07-11 21:24:24,831 p=4448 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:24:24,831 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:120
+2019-07-11 21:24:24,873 p=4448 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562873063.7546418,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562873057.1656368,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562873057.1656368,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:24:24,887 p=4448 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:24:24,888 p=4448 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:129
+2019-07-11 21:24:25,830 p=4448 u=jacques |  changed: [localhost] => {"changed": true, "cmd": "/usr/bin/rsync --delay-updates -F --compress --archive --out-format=<<CHANGED>>%i %n%L /tmp/foo /tmp/remote_foo", "msg": ".d..t...... foo/\n>f..t...... foo/bar.txt\n", "rc": 0, "stdout_lines": [".d..t...... foo/", ">f..t...... foo/bar.txt"]}
+2019-07-11 21:24:25,831 p=4448 u=jacques |  META: ran handlers
+2019-07-11 21:24:25,832 p=4448 u=jacques |  META: ran handlers
+2019-07-11 21:24:25,835 p=4448 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:24:25,835 p=4448 u=jacques |  localhost                  : ok=12   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:24:40,661 p=14892 u=jacques |  ansible-playbook 2.8.1
+  config file = /home/jacques/Class/DO407/chapter9/ansible.cfg
+  configured module search path = ['/home/jacques/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.7.3 (default, May 11 2019, 00:45:16) [GCC 8.3.1 20190223 (Red Hat 8.3.1-2)]
+2019-07-11 21:24:40,661 p=14892 u=jacques |  Using /home/jacques/Class/DO407/chapter9/ansible.cfg as config file
+2019-07-11 21:24:40,679 p=14892 u=jacques |  host_list declined parsing /home/jacques/Class/DO407/chapter9/inventory as it did not pass it's verify_file() method
+2019-07-11 21:24:40,679 p=14892 u=jacques |  script declined parsing /home/jacques/Class/DO407/chapter9/inventory as it did not pass it's verify_file() method
+2019-07-11 21:24:40,679 p=14892 u=jacques |  auto declined parsing /home/jacques/Class/DO407/chapter9/inventory as it did not pass it's verify_file() method
+2019-07-11 21:24:40,686 p=14892 u=jacques |  Parsed /home/jacques/Class/DO407/chapter9/inventory inventory source with ini plugin
+2019-07-11 21:24:41,474 p=14892 u=jacques |  PLAYBOOK: step.yml *******************************************************************************************************************************************
+2019-07-11 21:24:41,474 p=14892 u=jacques |  1 plays in step.yml
+2019-07-11 21:24:41,517 p=14892 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:24:41,526 p=14892 u=jacques |  META: ran handlers
+2019-07-11 21:24:41,545 p=14892 u=jacques |  TASK [Create a directory] ************************************************************************************************************************************
+2019-07-11 21:24:41,546 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:10
+2019-07-11 21:24:41,581 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:41,582 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:41,602 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938 `" && echo ansible-tmp-1562873081.5788305-181282457021938="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938 `" ) && sleep 0'
+2019-07-11 21:24:41,993 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/file.py
+2019-07-11 21:24:41,994 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpfpljlsjp TO /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938/AnsiballZ_file.py
+2019-07-11 21:24:41,995 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938/ /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938/AnsiballZ_file.py && sleep 0'
+2019-07-11 21:24:42,012 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-kkhovpqwwpjpxkojwnyacqopqilhauzj ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938/AnsiballZ_file.py'"'"' && sleep 0'
+2019-07-11 21:24:42,412 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873081.5788305-181282457021938/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:42,437 p=14892 u=jacques |  ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/tmp/foo"
+        },
+        "before": {
+            "path": "/tmp/foo"
+        }
+    },
+    "gid": 1000,
+    "group": "jacques",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": "jacques",
+            "mode": 493,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": "jacques",
+            "path": "/tmp/foo",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "directory",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0755",
+    "owner": "jacques",
+    "path": "/tmp/foo",
+    "secontext": "unconfined_u:object_r:user_tmp_t:s0",
+    "size": 60,
+    "state": "directory",
+    "uid": 1000
+}
+2019-07-11 21:24:42,454 p=14892 u=jacques |  TASK [Touch a file bar.txt] **********************************************************************************************************************************
+2019-07-11 21:24:42,454 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:23
+2019-07-11 21:24:42,492 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:42,493 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:42,515 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805 `" && echo ansible-tmp-1562873082.4914224-88893462714805="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805 `" ) && sleep 0'
+2019-07-11 21:24:42,550 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/file.py
+2019-07-11 21:24:42,552 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpb3r0awhv TO /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805/AnsiballZ_file.py
+2019-07-11 21:24:42,553 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805/ /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805/AnsiballZ_file.py && sleep 0'
+2019-07-11 21:24:42,578 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-ltyqpezmlxnnhmnazbyjvfsbwykzcozf ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805/AnsiballZ_file.py'"'"' && sleep 0'
+2019-07-11 21:24:43,048 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873082.4914224-88893462714805/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:43,081 p=14892 u=jacques |  changed: [localhost] => {
+    "changed": true,
+    "dest": "/tmp/foo/bar.txt",
+    "diff": {
+        "after": {
+            "atime": 1562873083.0165975,
+            "mtime": 1562873083.0165975,
+            "path": "/tmp/foo/bar.txt",
+            "state": "touch"
+        },
+        "before": {
+            "atime": 1562873065.7686434,
+            "mtime": 1562873057.1656368,
+            "path": "/tmp/foo/bar.txt",
+            "state": "file"
+        }
+    },
+    "gid": 1000,
+    "group": "jacques",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": "jacques",
+            "mode": 416,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": "jacques",
+            "path": "/tmp/foo/bar.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "touch",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0640",
+    "owner": "jacques",
+    "secontext": "unconfined_u:object_r:samba_share_t:s0",
+    "size": 131,
+    "state": "file",
+    "uid": 1000
+}
+2019-07-11 21:24:43,091 p=14892 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:24:43,091 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:36
+2019-07-11 21:24:43,117 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:43,118 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:43,134 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389 `" && echo ansible-tmp-1562873083.1166399-189669451720389="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389 `" ) && sleep 0'
+2019-07-11 21:24:43,163 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/file.py
+2019-07-11 21:24:43,164 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpn_c70s_4 TO /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389/AnsiballZ_file.py
+2019-07-11 21:24:43,166 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389/ /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389/AnsiballZ_file.py && sleep 0'
+2019-07-11 21:24:43,180 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-eguqwsqcknrwiljjgwrxucezvgmuxdgl ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389/AnsiballZ_file.py'"'"' && sleep 0'
+2019-07-11 21:24:43,554 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873083.1166399-189669451720389/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:43,574 p=14892 u=jacques |  ok: [localhost] => {
+    "changed": false,
+    "diff": {
+        "after": {
+            "path": "/tmp/foo/bar.txt"
+        },
+        "before": {
+            "path": "/tmp/foo/bar.txt"
+        }
+    },
+    "gid": 1000,
+    "group": "jacques",
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/tmp/foo/bar.txt",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": "samba_share_t",
+            "seuser": null,
+            "src": null,
+            "state": "file",
+            "unsafe_writes": null
+        }
+    },
+    "mode": "0640",
+    "owner": "jacques",
+    "path": "/tmp/foo/bar.txt",
+    "secontext": "unconfined_u:object_r:samba_share_t:s0",
+    "size": 131,
+    "state": "file",
+    "uid": 1000
+}
+2019-07-11 21:24:43,585 p=14892 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:24:43,585 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:46
+2019-07-11 21:24:43,619 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:43,619 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:43,633 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041 `" && echo ansible-tmp-1562873083.6184368-267409610251041="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041 `" ) && sleep 0'
+2019-07-11 21:24:43,913 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/system/sefcontext.py
+2019-07-11 21:24:43,913 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmprcdiafav TO /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041/AnsiballZ_sefcontext.py
+2019-07-11 21:24:43,916 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041/ /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041/AnsiballZ_sefcontext.py && sleep 0'
+2019-07-11 21:24:43,934 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-lmeqldulhylwaxumrqiazznwdousukfg ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041/AnsiballZ_sefcontext.py'"'"' && sleep 0'
+2019-07-11 21:24:45,949 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873083.6184368-267409610251041/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:45,975 p=14892 u=jacques |  ok: [localhost] => {
+    "changed": false,
+    "ftype": "a",
+    "invocation": {
+        "module_args": {
+            "ftype": "a",
+            "ignore_selinux_state": false,
+            "reload": true,
+            "selevel": null,
+            "setype": "samba_share_t",
+            "seuser": null,
+            "state": "present",
+            "target": "/tmp/foo/bar.txt"
+        }
+    },
+    "serange": "s0",
+    "setype": "samba_share_t",
+    "seuser": "system_u",
+    "state": "present",
+    "target": "/tmp/foo/bar.txt"
+}
+2019-07-11 21:24:45,989 p=14892 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:24:45,989 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:57
+2019-07-11 21:24:46,018 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:46,018 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:46,038 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412 `" && echo ansible-tmp-1562873086.0172389-10202163534412="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412 `" ) && sleep 0'
+2019-07-11 21:24:46,423 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2019-07-11 21:24:46,424 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmps1gb25fe TO /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/AnsiballZ_stat.py
+2019-07-11 21:24:46,425 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/ /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/AnsiballZ_stat.py && sleep 0'
+2019-07-11 21:24:46,442 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-pismiqmmwsemdxubszukfkskxtlmsdrs ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/AnsiballZ_stat.py'"'"' && sleep 0'
+2019-07-11 21:24:46,913 p=14892 u=jacques |  <127.0.0.1> PUT /etc/passwd TO /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/source
+2019-07-11 21:24:46,914 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/ /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/source && sleep 0'
+2019-07-11 21:24:47,293 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/copy.py
+2019-07-11 21:24:47,294 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmp5o6mg08j TO /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/AnsiballZ_copy.py
+2019-07-11 21:24:47,295 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/ /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/AnsiballZ_copy.py && sleep 0'
+2019-07-11 21:24:47,315 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-ivyofpakzbvyixtujnnaxrzpsizyzejf ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/AnsiballZ_copy.py'"'"' && sleep 0'
+2019-07-11 21:24:47,769 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:47,799 p=14892 u=jacques |  changed: [localhost] => {
+    "changed": true,
+    "checksum": "6e79a0e0edc5674e439de15c4cb098de57db0384",
+    "dest": "/tmp/foo/passwd",
+    "diff": [],
+    "gid": 0,
+    "group": "root",
+    "invocation": {
+        "module_args": {
+            "_original_basename": "passwd",
+            "attributes": null,
+            "backup": false,
+            "checksum": "6e79a0e0edc5674e439de15c4cb098de57db0384",
+            "content": null,
+            "delimiter": null,
+            "dest": "/tmp/foo/passwd",
+            "directory_mode": null,
+            "follow": false,
+            "force": true,
+            "group": null,
+            "local_follow": null,
+            "mode": null,
+            "owner": null,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": "/home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/source",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "md5sum": "78bbbe0c25c6fe5f6975074efac70020",
+    "mode": "0644",
+    "owner": "root",
+    "secontext": "unconfined_u:object_r:user_home_t:s0",
+    "size": 3119,
+    "src": "/home/jacques/.ansible/tmp/ansible-tmp-1562873086.0172389-10202163534412/source",
+    "state": "file",
+    "uid": 0
+}
+2019-07-11 21:24:47,820 p=14892 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:24:47,825 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:67
+2019-07-11 21:24:47,857 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:47,858 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:47,881 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544 `" && echo ansible-tmp-1562873087.8562806-20568675168544="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544 `" ) && sleep 0'
+2019-07-11 21:24:48,225 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/net_tools/basics/slurp.py
+2019-07-11 21:24:48,227 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpwu37e2rx TO /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544/AnsiballZ_slurp.py
+2019-07-11 21:24:48,228 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544/ /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544/AnsiballZ_slurp.py && sleep 0'
+2019-07-11 21:24:48,244 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-azsinclrljbkouksbgekaiswmomhllpz ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544/AnsiballZ_slurp.py'"'"' && sleep 0'
+2019-07-11 21:24:48,680 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873087.8562806-20568675168544/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:48,710 p=14892 u=jacques |  ok: [localhost] => {
+    "changed": false,
+    "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+    "dest": "/home/jacques/Class/DO407/chapter9/bar.txt",
+    "file": "/tmp/foo/bar.txt",
+    "md5sum": "07c12c42e26bb5bdb7604167b9feb278"
+}
+2019-07-11 21:24:48,724 p=14892 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:24:48,724 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:78
+2019-07-11 21:24:48,751 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:48,752 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:48,771 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913 `" && echo ansible-tmp-1562873088.749016-266879983546913="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913 `" ) && sleep 0'
+2019-07-11 21:24:49,157 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/lineinfile.py
+2019-07-11 21:24:49,158 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmp93rpzh6k TO /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913/AnsiballZ_lineinfile.py
+2019-07-11 21:24:49,160 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913/ /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913/AnsiballZ_lineinfile.py && sleep 0'
+2019-07-11 21:24:49,182 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-qoxudalrwvrebrlceuktvqodvcvardos ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913/AnsiballZ_lineinfile.py'"'"' && sleep 0'
+2019-07-11 21:24:49,565 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873088.749016-266879983546913/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:49,581 p=14892 u=jacques |  ok: [localhost] => {
+    "backup": "",
+    "changed": false,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "/tmp/foo/bar.txt (content)",
+            "before": "",
+            "before_header": "/tmp/foo/bar.txt (content)"
+        },
+        {
+            "after_header": "/tmp/foo/bar.txt (file attributes)",
+            "before_header": "/tmp/foo/bar.txt (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backrefs": false,
+            "backup": false,
+            "content": null,
+            "create": false,
+            "delimiter": null,
+            "directory_mode": null,
+            "firstmatch": false,
+            "follow": false,
+            "force": null,
+            "group": null,
+            "insertafter": null,
+            "insertbefore": null,
+            "line": "Hello World!",
+            "mode": null,
+            "owner": null,
+            "path": "/tmp/foo/bar.txt",
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "present",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "msg": ""
+}
+2019-07-11 21:24:49,587 p=14892 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:24:49,587 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:89
+2019-07-11 21:24:49,616 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:49,616 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:49,624 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125 `" && echo ansible-tmp-1562873089.6151977-182620622296125="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125 `" ) && sleep 0'
+2019-07-11 21:24:49,924 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/blockinfile.py
+2019-07-11 21:24:49,925 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpyixqmmht TO /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125/AnsiballZ_blockinfile.py
+2019-07-11 21:24:49,927 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125/ /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125/AnsiballZ_blockinfile.py && sleep 0'
+2019-07-11 21:24:49,941 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-uwtvxlryjinvyvdtjgmrmtlkqiwmcbge ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125/AnsiballZ_blockinfile.py'"'"' && sleep 0'
+2019-07-11 21:24:50,270 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873089.6151977-182620622296125/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:50,289 p=14892 u=jacques |  ok: [localhost] => {
+    "changed": false,
+    "diff": [
+        {
+            "after": "",
+            "after_header": "/tmp/foo/bar.txt (content)",
+            "before": "",
+            "before_header": "/tmp/foo/bar.txt (content)"
+        },
+        {
+            "after_header": "/tmp/foo/bar.txt (file attributes)",
+            "before_header": "/tmp/foo/bar.txt (file attributes)"
+        }
+    ],
+    "invocation": {
+        "module_args": {
+            "attributes": null,
+            "backup": false,
+            "block": "This block of text\nwas added by\nAnsible blockinfile module.\n",
+            "content": null,
+            "create": false,
+            "delimiter": null,
+            "directory_mode": null,
+            "follow": false,
+            "force": null,
+            "group": null,
+            "insertafter": null,
+            "insertbefore": null,
+            "marker": "# {mark} ANSIBLE MANAGED BLOCK",
+            "marker_begin": "BEGIN",
+            "marker_end": "END",
+            "mode": null,
+            "owner": null,
+            "path": "/tmp/foo/bar.txt",
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "present",
+            "unsafe_writes": null,
+            "validate": null
+        }
+    },
+    "msg": ""
+}
+2019-07-11 21:24:50,296 p=14892 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:24:50,296 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:103
+2019-07-11 21:24:50,316 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:50,316 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:50,333 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419 `" && echo ansible-tmp-1562873090.3153493-127940784429419="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419 `" ) && sleep 0'
+2019-07-11 21:24:50,360 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/file.py
+2019-07-11 21:24:50,361 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpmom8g4hb TO /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419/AnsiballZ_file.py
+2019-07-11 21:24:50,363 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419/ /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419/AnsiballZ_file.py && sleep 0'
+2019-07-11 21:24:50,380 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-hothkypiqmahkpdhtmcavipujzuxaxxv ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419/AnsiballZ_file.py'"'"' && sleep 0'
+2019-07-11 21:24:50,731 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873090.3153493-127940784429419/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:50,749 p=14892 u=jacques |  changed: [localhost] => {
+    "changed": true,
+    "diff": {
+        "after": {
+            "path": "/tmp/foo/passwd",
+            "state": "absent"
+        },
+        "before": {
+            "path": "/tmp/foo/passwd",
+            "state": "file"
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "_diff_peek": null,
+            "_original_basename": null,
+            "access_time": null,
+            "access_time_format": "%Y%m%d%H%M.%S",
+            "attributes": null,
+            "backup": null,
+            "content": null,
+            "delimiter": null,
+            "dest": "/tmp/foo/passwd",
+            "directory_mode": null,
+            "follow": true,
+            "force": false,
+            "group": null,
+            "mode": null,
+            "modification_time": null,
+            "modification_time_format": "%Y%m%d%H%M.%S",
+            "owner": null,
+            "path": "/tmp/foo/passwd",
+            "recurse": false,
+            "regexp": null,
+            "remote_src": null,
+            "selevel": null,
+            "serole": null,
+            "setype": null,
+            "seuser": null,
+            "src": null,
+            "state": "absent",
+            "unsafe_writes": null
+        }
+    },
+    "path": "/tmp/foo/passwd",
+    "state": "absent"
+}
+2019-07-11 21:24:50,758 p=14892 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:24:50,758 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:113
+2019-07-11 21:24:50,787 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:50,788 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:50,809 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753 `" && echo ansible-tmp-1562873090.786824-128493994425753="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753 `" ) && sleep 0'
+2019-07-11 21:24:50,823 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/stat.py
+2019-07-11 21:24:50,824 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmpdus60vfu TO /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753/AnsiballZ_stat.py
+2019-07-11 21:24:50,824 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753/ /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753/AnsiballZ_stat.py && sleep 0'
+2019-07-11 21:24:50,835 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-txcqonqzxxpwiliqoalkkhkukzzvrqpz ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753/AnsiballZ_stat.py'"'"' && sleep 0'
+2019-07-11 21:24:51,181 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/jacques/.ansible/tmp/ansible-tmp-1562873090.786824-128493994425753/ > /dev/null 2>&1 && sleep 0'
+2019-07-11 21:24:51,203 p=14892 u=jacques |  ok: [localhost] => {
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1",
+            "follow": false,
+            "get_attributes": true,
+            "get_checksum": true,
+            "get_md5": null,
+            "get_mime": true,
+            "path": "/tmp/foo/bar.txt"
+        }
+    },
+    "stat": {
+        "atime": 1562873090.2416618,
+        "attr_flags": "",
+        "attributes": [],
+        "block_size": 4096,
+        "blocks": 8,
+        "charset": "us-ascii",
+        "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+        "ctime": 1562873083.0156562,
+        "dev": 45,
+        "device_type": 0,
+        "executable": false,
+        "exists": true,
+        "gid": 1000,
+        "gr_name": "jacques",
+        "inode": 411897,
+        "isblk": false,
+        "ischr": false,
+        "isdir": false,
+        "isfifo": false,
+        "isgid": false,
+        "islnk": false,
+        "isreg": true,
+        "issock": false,
+        "isuid": false,
+        "mimetype": "text/plain",
+        "mode": "0640",
+        "mtime": 1562873083.0156562,
+        "nlink": 1,
+        "path": "/tmp/foo/bar.txt",
+        "pw_name": "jacques",
+        "readable": true,
+        "rgrp": true,
+        "roth": false,
+        "rusr": true,
+        "size": 131,
+        "uid": 1000,
+        "version": null,
+        "wgrp": false,
+        "woth": false,
+        "writeable": true,
+        "wusr": true,
+        "xgrp": false,
+        "xoth": false,
+        "xusr": false
+    }
+}
+2019-07-11 21:24:51,220 p=14892 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:24:51,221 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:120
+2019-07-11 21:24:51,263 p=14892 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562873090.2416618,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562873083.0156562,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562873083.0156562,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:24:51,275 p=14892 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:24:51,276 p=14892 u=jacques |  task path: /home/jacques/Class/DO407/chapter9/step.yml:129
+2019-07-11 21:24:51,339 p=14892 u=jacques |  <127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: jacques
+2019-07-11 21:24:51,339 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'echo ~jacques && sleep 0'
+2019-07-11 21:24:51,352 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873091.338444-239389863728582 `" && echo ansible-tmp-1562873091.338444-239389863728582="` echo /home/jacques/.ansible/tmp/ansible-tmp-1562873091.338444-239389863728582 `" ) && sleep 0'
+2019-07-11 21:24:51,724 p=14892 u=jacques |  Using module file /usr/lib/python3.7/site-packages/ansible/modules/files/synchronize.py
+2019-07-11 21:24:51,725 p=14892 u=jacques |  <127.0.0.1> PUT /home/jacques/.ansible/tmp/ansible-local-14892fas6hd_j/tmphshshjv0 TO /home/jacques/.ansible/tmp/ansible-tmp-1562873091.338444-239389863728582/AnsiballZ_synchronize.py
+2019-07-11 21:24:51,727 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/jacques/.ansible/tmp/ansible-tmp-1562873091.338444-239389863728582/ /home/jacques/.ansible/tmp/ansible-tmp-1562873091.338444-239389863728582/AnsiballZ_synchronize.py && sleep 0'
+2019-07-11 21:24:51,746 p=14892 u=jacques |  <127.0.0.1> EXEC /bin/sh -c 'sudo -H -S -n  -u root /bin/sh -c '"'"'echo BECOME-SUCCESS-acvtkpmmpihqpnzsasfccktmjdhssukn ; /usr/bin/python3 /home/jacques/.ansible/tmp/ansible-tmp-1562873091.338444-239389863728582/AnsiballZ_synchronize.py'"'"' && sleep 0'
+2019-07-11 21:24:52,148 p=14892 u=jacques |  changed: [localhost] => {
+    "changed": true,
+    "cmd": "/usr/bin/rsync --delay-updates -F --compress --archive --out-format=<<CHANGED>>%i %n%L /tmp/foo /tmp/remote_foo",
+    "invocation": {
+        "module_args": {
+            "_local_rsync_password": null,
+            "_local_rsync_path": "rsync",
+            "_substitute_controller": false,
+            "archive": true,
+            "checksum": false,
+            "compress": true,
+            "copy_links": false,
+            "delete": false,
+            "dest": "/tmp/remote_foo",
+            "dest_port": null,
+            "dirs": false,
+            "existing_only": false,
+            "group": null,
+            "link_dest": null,
+            "links": null,
+            "mode": "push",
+            "owner": null,
+            "partial": false,
+            "perms": null,
+            "private_key": null,
+            "recursive": null,
+            "rsync_opts": [],
+            "rsync_path": null,
+            "rsync_timeout": 0,
+            "set_remote_user": true,
+            "src": "/tmp/foo",
+            "ssh_args": null,
+            "times": null,
+            "verify_host": false
+        }
+    },
+    "msg": ".d..t...... foo/\n>f..t...... foo/bar.txt\n",
+    "rc": 0,
+    "stdout_lines": [
+        ".d..t...... foo/",
+        ">f..t...... foo/bar.txt"
+    ]
+}
+2019-07-11 21:24:52,149 p=14892 u=jacques |  META: ran handlers
+2019-07-11 21:24:52,150 p=14892 u=jacques |  META: ran handlers
+2019-07-11 21:24:52,161 p=14892 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:24:52,161 p=14892 u=jacques |  localhost                  : ok=12   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:41:51,003 p=5201 u=jacques |  PLAY [localhost] ************************************************************************************************************************************************************
+2019-07-11 21:41:51,021 p=5201 u=jacques |  TASK [Create a directory] ***************************************************************************************************************************************************
+2019-07-11 21:41:51,784 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:51,792 p=5201 u=jacques |  TASK [Touch a file bar.txt] *************************************************************************************************************************************************
+2019-07-11 21:41:52,235 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:52,243 p=5201 u=jacques |  TASK [Set SELinux type] *****************************************************************************************************************************************************
+2019-07-11 21:41:52,643 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:52,650 p=5201 u=jacques |  TASK [Set SELinux type persistently] ****************************************************************************************************************************************
+2019-07-11 21:41:54,479 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:54,500 p=5201 u=jacques |  TASK [Copy a file to remote host] *******************************************************************************************************************************************
+2019-07-11 21:41:55,214 p=5201 u=jacques |  changed: [localhost]
+2019-07-11 21:41:55,230 p=5201 u=jacques |  TASK [Fetch a file off remote host] *****************************************************************************************************************************************
+2019-07-11 21:41:55,256 p=5201 u=jacques |  skipping: [localhost]
+2019-07-11 21:41:55,271 p=5201 u=jacques |  TASK [Add a line of text to a file] *****************************************************************************************************************************************
+2019-07-11 21:41:56,059 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:56,068 p=5201 u=jacques |  TASK [Add multiple lines of text to a file] *********************************************************************************************************************************
+2019-07-11 21:41:56,853 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:56,866 p=5201 u=jacques |  TASK [Make sure file does not exist] ****************************************************************************************************************************************
+2019-07-11 21:41:57,432 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:57,446 p=5201 u=jacques |  TASK [Stat /tmp/foo/bar.txt] ************************************************************************************************************************************************
+2019-07-11 21:41:58,032 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:58,048 p=5201 u=jacques |  TASK [Display stat results] *************************************************************************************************************************************************
+2019-07-11 21:41:58,094 p=5201 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562874116.7984645,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562873083.0156562,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562873083.0156562,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:41:58,105 p=5201 u=jacques |  TASK [Sync local dir to remote dir] *****************************************************************************************************************************************
+2019-07-11 21:41:58,925 p=5201 u=jacques |  ok: [localhost]
+2019-07-11 21:41:58,927 p=5201 u=jacques |  PLAY RECAP ******************************************************************************************************************************************************************
+2019-07-11 21:41:58,928 p=5201 u=jacques |  localhost                  : ok=11   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-07-11 21:47:51,059 p=16726 u=jacques |  PLAY [localhost] *********************************************************************************************************************************************
+2019-07-11 21:47:51,070 p=16726 u=jacques |  TASK [Create a directory] ************************************************************************************************************************************
+2019-07-11 21:47:51,679 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:51,687 p=16726 u=jacques |  TASK [Touch a file bar.txt] **********************************************************************************************************************************
+2019-07-11 21:47:52,082 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:52,099 p=16726 u=jacques |  TASK [Set SELinux type] **************************************************************************************************************************************
+2019-07-11 21:47:52,604 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:52,609 p=16726 u=jacques |  TASK [Set SELinux type persistently] *************************************************************************************************************************
+2019-07-11 21:47:54,252 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:54,258 p=16726 u=jacques |  TASK [Copy a file to remote host] ****************************************************************************************************************************
+2019-07-11 21:47:54,911 p=16726 u=jacques |  changed: [localhost]
+2019-07-11 21:47:54,920 p=16726 u=jacques |  TASK [Fetch a file off remote host] **************************************************************************************************************************
+2019-07-11 21:47:54,938 p=16726 u=jacques |  skipping: [localhost]
+2019-07-11 21:47:54,943 p=16726 u=jacques |  TASK [Add a line of text to a file] **************************************************************************************************************************
+2019-07-11 21:47:55,786 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:55,795 p=16726 u=jacques |  TASK [Add multiple lines of text to a file] ******************************************************************************************************************
+2019-07-11 21:47:56,575 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:56,584 p=16726 u=jacques |  TASK [Make sure file does not exist] *************************************************************************************************************************
+2019-07-11 21:47:57,097 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:57,103 p=16726 u=jacques |  TASK [Stat /tmp/foo/bar.txt] *********************************************************************************************************************************
+2019-07-11 21:47:57,647 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:57,656 p=16726 u=jacques |  TASK [Display stat results] **********************************************************************************************************************************
+2019-07-11 21:47:57,695 p=16726 u=jacques |  ok: [localhost] => {
+    "results": {
+        "changed": false,
+        "failed": false,
+        "stat": {
+            "atime": 1562874476.5187535,
+            "attr_flags": "",
+            "attributes": [],
+            "block_size": 4096,
+            "blocks": 8,
+            "charset": "us-ascii",
+            "checksum": "209b25dc13c73c6ec523a07a7109933852dde51b",
+            "ctime": 1562873083.0156562,
+            "dev": 45,
+            "device_type": 0,
+            "executable": false,
+            "exists": true,
+            "gid": 1000,
+            "gr_name": "jacques",
+            "inode": 411897,
+            "isblk": false,
+            "ischr": false,
+            "isdir": false,
+            "isfifo": false,
+            "isgid": false,
+            "islnk": false,
+            "isreg": true,
+            "issock": false,
+            "isuid": false,
+            "mimetype": "text/plain",
+            "mode": "0640",
+            "mtime": 1562873083.0156562,
+            "nlink": 1,
+            "path": "/tmp/foo/bar.txt",
+            "pw_name": "jacques",
+            "readable": true,
+            "rgrp": true,
+            "roth": false,
+            "rusr": true,
+            "size": 131,
+            "uid": 1000,
+            "version": null,
+            "wgrp": false,
+            "woth": false,
+            "writeable": true,
+            "wusr": true,
+            "xgrp": false,
+            "xoth": false,
+            "xusr": false
+        }
+    }
+}
+2019-07-11 21:47:57,705 p=16726 u=jacques |  TASK [Sync local dir to remote dir] **************************************************************************************************************************
+2019-07-11 21:47:58,567 p=16726 u=jacques |  ok: [localhost]
+2019-07-11 21:47:58,569 p=16726 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:47:58,569 p=16726 u=jacques |  localhost                  : ok=11   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-07-11 21:49:25,307 p=27816 u=jacques |  PLAY [Demo play] *********************************************************************************************************************************************
+2019-07-11 21:49:25,332 p=27816 u=jacques |  TASK [Gathering Facts] ***************************************************************************************************************************************
+2019-07-11 21:49:28,521 p=27816 u=jacques |  ok: [localhost]
+2019-07-11 21:49:28,549 p=27816 u=jacques |  TASK [This task will always run in check mode] ***************************************************************************************************************
+2019-07-11 21:49:29,212 p=27816 u=jacques |  skipping: [localhost]
+2019-07-11 21:49:29,247 p=27816 u=jacques |  TASK [This task will always run normally, never in check mode] ***********************************************************************************************
+2019-07-11 21:49:29,688 p=27816 u=jacques |  changed: [localhost]
+2019-07-11 21:49:29,698 p=27816 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:49:29,698 p=27816 u=jacques |  localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-07-11 21:56:05,623 p=12076 u=jacques |  PLAY [demo] **************************************************************************************************************************************************
+2019-07-11 21:56:05,635 p=12076 u=jacques |  TASK [Gathering Facts] ***************************************************************************************************************************************
+2019-07-11 21:56:08,137 p=12076 u=jacques |  ok: [localhost]
+2019-07-11 21:56:08,159 p=12076 u=jacques |  TASK [script demo] *******************************************************************************************************************************************
+2019-07-11 21:56:08,335 p=12076 u=jacques |  changed: [localhost]
+2019-07-11 21:56:08,343 p=12076 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:56:08,343 p=12076 u=jacques |  localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-11 21:56:28,066 p=14505 u=jacques |  PLAY [demo] **************************************************************************************************************************************************
+2019-07-11 21:56:28,080 p=14505 u=jacques |  TASK [Gathering Facts] ***************************************************************************************************************************************
+2019-07-11 21:56:30,395 p=14505 u=jacques |  ok: [localhost]
+2019-07-11 21:56:30,420 p=14505 u=jacques |  TASK [script demo] *******************************************************************************************************************************************
+2019-07-11 21:56:30,602 p=14505 u=jacques |  fatal: [localhost]: FAILED! => {"changed": true, "msg": "non-zero return code", "rc": 127, "stderr": "/home/jacques/.ansible/tmp/ansible-tmp-1562874990.4351895-177550055686744/script.sh: line 3: uptimep: command not found\n", "stderr_lines": ["/home/jacques/.ansible/tmp/ansible-tmp-1562874990.4351895-177550055686744/script.sh: line 3: uptimep: command not found"], "stdout": "", "stdout_lines": []}
+2019-07-11 21:56:30,604 p=14505 u=jacques |  PLAY RECAP ***************************************************************************************************************************************************
+2019-07-11 21:56:30,604 p=14505 u=jacques |  localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-11 22:00:55,241 p=17762 u=jacques |  serverc | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: jacques@serverc: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2019-07-11 22:00:55,243 p=17762 u=jacques |  servera | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: jacques@servera: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2019-07-11 22:01:04,024 p=17762 u=jacques |   [ERROR]: User interrupted execution
+
+2019-07-11 22:01:10,896 p=17845 u=jacques |  localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2019-07-11 22:01:25,035 p=19014 u=jacques |  localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2019-07-11 22:02:22,456 p=20374 u=jacques |  localhost | CHANGED | rc=0 >>
+Filesystem               Size  Used Avail Use% Mounted on
+devtmpfs                 3.9G     0  3.9G   0% /dev
+tmpfs                    3.9G  106M  3.8G   3% /dev/shm
+tmpfs                    3.9G  1.9M  3.9G   1% /run
+tmpfs                    3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/fedora-root   49G   34G   13G  74% /
+tmpfs                    3.9G  1.7M  3.9G   1% /tmp
+/dev/sda1                976M  222M  688M  25% /boot
+/dev/mapper/fedora-home  858G   57G  759G   7% /home
+tmpfs                    788M   14M  775M   2% /run/user/1000
+
+2019-07-11 22:02:31,545 p=21544 u=jacques |  localhost | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:           7879        3933        1130         720        2814        2945
+Swap:          8011          17        7994
+

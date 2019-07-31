@@ -1,0 +1,12 @@
+---
+- name: Demo play
+  hosts: localhost
+  tasks:
+
+  - name: Normal task
+    debug:
+      msg: 'This is a normal task'
+
+  - name: Include a role
+    include_role:
+      name: motd

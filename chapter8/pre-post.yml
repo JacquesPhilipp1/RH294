@@ -1,0 +1,27 @@
+---
+- name: Demo play
+  hosts: localhost
+
+  pre_tasks:
+    debug:
+      msg: 'pre-task'
+    notify: my handler
+
+  roles:
+    - role1
+
+  tasks:
+    debug:
+      msg: 'normal task'
+    notify: my handler
+
+  post_tasks:
+    debug:
+      msg: 'post-task'
+    notify: my handler
+
+  handlers:
+    - name: my handler
+      debug:
+        msg: 'Running handler'
+

@@ -1,0 +1,8 @@
+---
+- name: Demo role motd
+  hosts: localhost
+  vars:
+    owner: 'japhilip@redhat.com'
+  roles:
+    - motd
+    - robertdebock.httpd

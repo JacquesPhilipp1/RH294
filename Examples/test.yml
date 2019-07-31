@@ -1,0 +1,17 @@
+#! /usr/bin/ansible-playbook
+---
+- name: Change sshd
+  hosts: localhost
+  gather_facts: no
+  tasks:
+
+  - name: Demo line in file
+    replace:
+      path: sshd_config
+      #regexp: '((?!^\s*PermitRootLogin\s+no$)^\s*PermitRootLogin.*)$'
+      regexp: "{{ item.regexp | unique }}"
+      replace: "{{ item.line | unique }}"
+    loop:
+      - regexp: '^PermitRootLogin'
+        line: 'PremitRootLogin no'
+

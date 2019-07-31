@@ -1,0 +1,23 @@
+      - dir
+--
+      - touch
+--
+      - setype
+--
+      - fcontext
+--
+      - copy
+--
+      - fetch
+--
+      - addline
+--
+      - addblock
+--
+      - delfile
+--
+      - stat
+--
+      - stat
+--
+      - rsync

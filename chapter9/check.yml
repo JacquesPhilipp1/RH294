@@ -1,0 +1,13 @@
+---
+- name: Demo play
+  hosts: localhost
+  tasks:
+  
+  - name: This task will always run in check mode
+    shell: uname -a
+    check_mode: yes
+
+
+  - name: This task will always run normally, never in check mode
+    shell: uname -a
+    check_mode: no

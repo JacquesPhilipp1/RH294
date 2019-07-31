@@ -1,0 +1,135 @@
+---
+- name:
+  hosts: localhost
+  gather_facts: no
+  tasks:
+
+### Create a directory if it does not exist and set the ownership and permissions
+### same as mkdir
+#
+  - name: Create a directory
+    file:
+      path: /tmp/foo
+      owner: jacques
+      group: jacques
+      mode: 0755
+      state: directory
+    tags:
+      - dir
+
+### Touch a file and set ownership and permissions
+### same as touch
+#
+  - name: Touch a file bar.txt
+    file:
+      path: /tmp/foo/bar.txt
+      owner: jacques
+      group: jacques
+      mode: 0640
+      state: touch
+    tags:
+      - touch
+
+### Change the SELinux type
+### same as chcon
+#
+  - name: Set SELinux type
+    file:
+      path: /tmp/foo/bar.txt
+      setype: samba_share_t
+    tags:
+      - setype
+
+### Make SELinux file context changes persistent so that restorecon wont undo it
+### same as semanage fcontext
+#
+  - name: Set SELinux type persistently
+    sefcontext:
+      target: /tmp/foo/bar.txt
+      setype: samba_share_t
+      state: present
+    tags:
+      - fcontext
+
+### Copy file to managed host
+### same as scp or sftp
+#
+  - name: Copy a file to remote host
+    copy:
+      src: /etc/passwd
+      dest: /tmp/foo/passwd
+    tags:
+      - copy
+
+### Copy (fetch a file) a file from managed host to control node
+### Same as copy but in reverse.
+#
+  - name: Fetch a file off remote host
+    fetch:
+      src: /tmp/foo/bar.txt
+      dest: bar.txt
+      flat: yes
+    tags:
+      - fetch
+
+### Ensure a line of text exists in a file
+### similar to sed
+#
+  - name: Add a line of text to a file
+    lineinfile:
+      path: /tmp/foo/bar.txt
+      line: 'Hello World!'
+      state: present
+    tags:
+      - addline
+
+### Add a block of text to a file
+### use marker to change comments that are added
+#
+  - name: Add multiple lines of text to a file
+    blockinfile:
+      path: /tmp/foo/bar.txt
+      block: |
+        This block of text
+        was added by
+        Ansible blockinfile module.
+      state: present
+    tags:
+      - addblock
+
+### Delete a file from remote host
+### same a rm
+#
+  - name: Make sure file does not exist
+    file:
+      dest: /tmp/foo/passwd
+      state: absent
+    tags:
+      - delfile
+
+### Stat a file on managed host. It return lots of info in hash/dictionary values
+### same as stat
+#
+  - name: Stat /tmp/foo/bar.txt
+    stat:
+      path: /tmp/foo/bar.txt
+    register: results
+    tags:
+      - stat
+
+  - name: Display stat results
+    debug:
+      var: results
+    tags:
+      - stat
+
+### Rsync files between control node and managed hosts
+### same as rsync
+#
+  - name: Sync local dir to remote dir
+    synchronize:
+      src: /tmp/foo
+      dest: /tmp/remote_foo
+    tags:
+      - rsync
+

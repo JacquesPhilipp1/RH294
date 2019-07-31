@@ -1,0 +1,6 @@
+Hello World!
+# BEGIN ANSIBLE MANAGED BLOCK
+This block of text
+was added by
+Ansible blockinfile module.
+# END ANSIBLE MANAGED BLOCK

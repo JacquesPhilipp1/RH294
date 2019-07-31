@@ -1,0 +1,10 @@
+---
+- name: demo play (roles)
+  hosts: localhost
+
+  roles:
+    - httpd
+    - add_users
+      name: Jacques
+      surname: Philipp
+

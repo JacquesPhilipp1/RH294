@@ -1,0 +1,15 @@
+---
+- name: demo 
+  hosts: localhost
+  tasks:
+
+  - name: check if file exists
+    stat:
+      path: /tmo/foo/bar.txt
+    register: bar
+
+
+  - name: Fail if file does not exist
+    fail:
+      msg: 'The file does not exist'
+    when: not bar.stat.exists
