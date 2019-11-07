@@ -1,0 +1,30 @@
+# Review the different states of the yum module
+
+View table on page 388 at the bottom
+
+# Yum supports a list in the name directive which is faster than loop
+
+# To gather facts about packages your can use the package_facts module
+--> package_facts.yml
+
+# Demo different package managers like yum, dnf and apt
+--> package_diff.yml
+
+# to enable Redhat repos and RHSM repos you require a valid subscription
+# Once this has been setup you can use the rhsm_repository module to enable repos
+--> rhsm_repository.yml
+
+# To create a repo use the yum_repository module
+--> yum_repository.yml
+
+========= Guided Exercise 379 =========
+
+# user module lets you manage user accounts on a remote host including ssh keys
+--> users.yml
+
+========= Guided Exercise 409 =========
+
+# Demo cron, at and boot target
+--> startup.yml
+
+

@@ -1,0 +1,26 @@
+---
+- name: Install the required packages on the web servers
+  hosts: webservers
+  tasks:
+
+  - name: Install httpd on RHEL
+    yum:
+      name: httpd
+      state: present
+    when: "ansible_distribution == 'RedHat'"
+
+  - name: Install httpd on Fedora
+    dnf:
+      name: httpd
+      state: present
+    when: "ansible_distribution == 'Fedora'"
+
+### The package module auto detects which package manager to use. 
+##  The above example can be rewritten as follows
+
+  - name: Install httpd
+    package:
+      name: httpd
+      state: present
+
+

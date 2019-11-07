@@ -1,0 +1,35 @@
+---
+- name: Recurring cron job
+  hosts: webservers
+  become: true
+  tasks:
+
+  - name: Crontab file exists
+    cron:
+      name: Add date and time to a file
+      minute: "*/2"
+      hour: 9-16
+      weekday: 1-5
+      user: devops
+      job: date >> /home/devops/my_date_time_cron_job
+      cron_file: add-date-time
+      # You can remove the cron by changing the state to absent
+      state: present
+
+
+  - name: Create date and time file
+    at:
+      command: "date > ~/my_at_date_time\n"
+      count: 1
+      units: minutes
+      unique: yes
+      state: present
+
+  - name: Default boot target is graphical
+    file:
+      src: /usr/lib/systemd/system/multi-user.target
+      dest: /etc/systemd/system/default.target
+      state: link
+
+
+

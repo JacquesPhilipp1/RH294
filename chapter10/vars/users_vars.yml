@@ -1,0 +1,10 @@
+- username: user1
+  groups: webadmin
+- username: user2
+  groups: webadmin
+- username: user3
+  groups: sysadmins
+- username: user4
+  groups: sysadmins
+- username: user5
+  groups: webadmin

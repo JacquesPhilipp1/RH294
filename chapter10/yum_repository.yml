@@ -1,0 +1,18 @@
+---
+- name: Configure the company Yum repositories
+  hosts: servera.lab.example.com
+  tasks:  
+
+  - name: Deploy the GPG public key
+    rpm_key:
+      key: http://materials.example.com/yum/repository/RPM-GPG-KEY-example
+    state: present
+
+  - name: Ensure Example Repo exists
+    yum_repository:
+      file: example
+      name: example-internal
+      description: Example Inc. Internal YUM repo
+      baseurl: http://materials.example.com/yum/repository/
+      enabled: yes
+      gpgcheck: yes
